@@ -1,0 +1,12 @@
+{
+    "Vehicles": {
+        "brand": "",
+        "type": "",
+        "horsePower": "",
+        "fuelType": "",
+        "color": "",
+        "category": "",
+        "transmisson": "",
+        "numberPassenger": ""
+    }
+}

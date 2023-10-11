@@ -1,0 +1,28 @@
+============ Overview
+Purpose: Start developing a new API.
+Task: Complete the assignment.
+
+============ Learning Objectives
+By the end of this assignment the student will be able to do the following:
+
+Initiate a new Node.js backend API
+Create a new database in MongoDB and connect to it from the Node.js application
+Create GET and POST requests
+Create API documentation to test API endpoints
+
+============ Assignment Description
+For your assignment this lesson, you will create a new project of your choosing. You will have approximately four lessons in this course to complete it, similar to the last project. This project will perform CRUD operations on a MongoDB database, be published to the web, incorporate security measures, and include API documentation.
+
+Decide on the project you're going to create. 
+As you decide on a project, review the overall project requirements to ensure it is a good fit.
+Create a new Node.js project
+You'll use the same MongoDB cluster/account, but you should create a new database for this project. (When you connect to MongoDB Compass, you connect to your account, and your list of databases shows up in the bottom left corner.)
+Create your first REST API routes (similar to what we did with the routes and controllers folders in our first project). You will need at least one GET and one POST for this assignment.
+Create API documentation for these two routes, and test them
+Create a new Render project
+Be sure to create an env file for your local MongoDB credentials, and add config vars to your Render project. Your MongoDB credentials should never get pushed to git, so be sure to include your env file in your gitignore.
+Push to GitHub.
+Publish to Render.
+Create a brief video demonstrating the functionality of your assignment. Upload it to YouTube (public or unlisted).
+Submit GitHub, Render, and YouTube links in I-Learn.
+Be sure to review the rubric below to see how you will be graded on this assignment.

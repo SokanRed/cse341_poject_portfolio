@@ -1,0 +1,12 @@
+picked an idea (done) 
+Vehicle API:    Collection 1: Vehicles (make, model, year, fuel type, etc.). 
+                Collection 2: Maintenance records (vehicle, date, service performed, etc.)
+
+used https://jsoneditoronline.org/ to make valid json data
+used https://roger13.github.io/SwagDefGen/ to convert sample json to swagger yaml schema
+
+create an account here: https://app.swaggerhub.com/home started from the Pets template, 
+and created exportated Download API > resolved JSON and renamed it to swagger.json
+
+used mongoose
+create mongooose schema from json with this tool: https://transform.tools/json-to-mongoose 

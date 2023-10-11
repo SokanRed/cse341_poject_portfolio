@@ -1,0 +1,21 @@
+Vehicles
+	_id			        | MongoDB
+	brand			    | String
+	model			    | String
+	horsePower		    | Number
+	fuelType		    | String
+	color			    | String
+    category		    | String
+    transmisson		    | String
+    numberPassenger	    | Number
+
+Maintenance
+	vehicle_ID		    | Number UNIQUE
+    _id                 | MongoDB
+	date			    | Date
+	mileage			    | Number
+    lubrification	    | Boolean
+	brakes			    | Boolean
+	mirrors			    | Boolean
+	tires			    | Boolean
+	suspensionSystem	| Boolean
