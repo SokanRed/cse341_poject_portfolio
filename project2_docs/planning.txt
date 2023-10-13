@@ -10,7 +10,7 @@ Vehicles
     numberPassenger	    | Number
 
 Maintenance
-	vehicle_ID		    | Number UNIQUE
+	vehicle		    	| String
     _id                 | MongoDB
 	date			    | Date
 	mileage			    | Number

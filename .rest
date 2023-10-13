@@ -1,0 +1,5 @@
+### Vehicles
+GET http://localhost:8080/vehicles HTTP/1.1
+
+### Maintenance
+GET http://localhost:8080:maintenance HTTP/1.1
