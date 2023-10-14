@@ -18,6 +18,10 @@ content-type: application/json
     "numberPassenger": "5"
 }
 
+###
+GET http://localhost:8080/vehicle/652acb61a15cc2317341738c HTTP/1.1
+
+
 ### Maintenance
 GET http://localhost:8080/maintenance HTTP/1.1
 
@@ -35,3 +39,6 @@ content-type: application/json
     "tires": "Next time",
     "suspensionSystem": "okay"
 }
+
+###
+GET http://localhost:8080/maintenance/652ae440a15cc2317341738d HTTP/1.1

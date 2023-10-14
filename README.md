@@ -44,5 +44,5 @@ LOCALHOST: (check the schemes in swagger.js)
 "basePath": "/", "schemes": [ "http" ],
 
 RENDER: (check the schemes in swagger.js) 
-"host": "sokanred341-personal-assignment.onrender.com", 
+"host": "https://project-portfolio-8g80.onrender.com", 
 "basePath": "/", "schemes": [ "https" ],

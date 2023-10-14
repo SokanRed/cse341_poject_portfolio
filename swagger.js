@@ -5,7 +5,7 @@ const doc = {
         title: 'My API',
         description: 'Description',
     },
-    host: 'localhost:8080',
+    host: 'https://project-portfolio-8g80.onrender.com',
     schemes: ['https'],
 };
 
