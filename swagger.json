@@ -5,7 +5,7 @@
         "description": "Contact API",
         "version": "1.0.0"
     },
-    "host": "https://project-portfolio-8g80.onrender.com",
+    "host": "https://sokanred341-project-portfolio.onrender.com",
     "basePath": "/",
     "tags": [{
             "name": "vehicle",

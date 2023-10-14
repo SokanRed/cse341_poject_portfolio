@@ -1,11 +1,12 @@
-GET http://localhost:8080/index HTTP/1.1
+
 
 ### Vehicle
+### Get all Vehicles
 GET http://localhost:8080/vehicle HTTP/1.1
 ###
-GET https://project-portfolio-8g80.onrender.com/vehicle HTTP/1.1
+GET https://sokanred341-project-portfolio.onrender.com/vehicle HTTP/1.1
 
-###
+### Create New Vehicle
 POST http://localhost:8080/vehicle HTTP/1.1
 content-type: application/json
 
@@ -20,7 +21,7 @@ content-type: application/json
     "numberPassenger": "5"
 }
 ###
-POST https://project-portfolio-8g80.onrender.com/vehicle HTTP/1.1
+POST https://sokanred341-project-portfolio.onrender.com/vehicle HTTP/1.1
 content-type: application/json
 
 {
@@ -34,17 +35,18 @@ content-type: application/json
     "numberPassenger": "5"
 }
 
-###
+### Get Vehicle by Id
 GET http://localhost:8080/vehicle/652acb61a15cc2317341738c HTTP/1.1
 ###
-GET https://project-portfolio-8g80.onrender.com/652acb61a15cc2317341738c HTTP/1.1
+GET https://sokanred341-project-portfolio.onrender.com/652acb61a15cc2317341738c HTTP/1.1
 
 ### Maintenance
+### Get All Maintenances
 GET http://localhost:8080/maintenance HTTP/1.1
 ###
-GET https://project-portfolio-8g80.onrender.com/maintenance HTTP/1.1
+GET https://sokanred341-project-portfolio.onrender.com/maintenance HTTP/1.1
 
-###
+### Create New Maintenance
 POST http://localhost:8080/maintenance HTTP/1.1
 content-type: application/json
 
@@ -59,7 +61,7 @@ content-type: application/json
     "suspensionSystem": "okay"
 }
 ###
-POST https://project-portfolio-8g80.onrender.com/maintenance HTTP/1.1
+POST https://sokanred341-project-portfolio.onrender.com/maintenance HTTP/1.1
 content-type: application/json
 
 {
@@ -73,7 +75,7 @@ content-type: application/json
     "suspensionSystem": "okay"
 }
 
-###
+### Get Maintenance by Id
 GET http://localhost:8080/maintenance/652ae440a15cc2317341738d HTTP/1.1
 ###
-GET https://project-portfolio-8g80.onrender.com/maintenance/652ae440a15cc2317341738d HTTP/1.1
+GET https://sokanred341-project-portfolio.onrender.com/maintenance/652ae440a15cc2317341738d HTTP/1.1
