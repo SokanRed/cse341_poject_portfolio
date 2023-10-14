@@ -2,6 +2,8 @@ GET http://localhost:8080/index HTTP/1.1
 
 ### Vehicle
 GET http://localhost:8080/vehicle HTTP/1.1
+###
+GET https://project-portfolio-8g80.onrender.com/vehicle HTTP/1.1
 
 ###
 POST http://localhost:8080/vehicle HTTP/1.1
@@ -17,13 +19,30 @@ content-type: application/json
     "transmission": "Manuel",
     "numberPassenger": "5"
 }
+###
+POST https://project-portfolio-8g80.onrender.com/vehicle HTTP/1.1
+content-type: application/json
+
+{
+    "brand": "Audi",
+    "model": "RS6",
+    "horsePower": "750",
+    "fuelType": "gas",
+    "color": "Blue",
+    "category": "Avant",
+    "transmission": "Manuel",
+    "numberPassenger": "5"
+}
 
 ###
 GET http://localhost:8080/vehicle/652acb61a15cc2317341738c HTTP/1.1
-
+###
+GET https://project-portfolio-8g80.onrender.com/652acb61a15cc2317341738c HTTP/1.1
 
 ### Maintenance
 GET http://localhost:8080/maintenance HTTP/1.1
+###
+GET https://project-portfolio-8g80.onrender.com/maintenance HTTP/1.1
 
 ###
 POST http://localhost:8080/maintenance HTTP/1.1
@@ -39,6 +58,22 @@ content-type: application/json
     "tires": "Next time",
     "suspensionSystem": "okay"
 }
+###
+POST https://project-portfolio-8g80.onrender.com/maintenance HTTP/1.1
+content-type: application/json
+
+{
+    "vehicle": "Ford Mustang",
+    "date": "2023/10/10",
+    "mileage": "10 000",
+    "lubrification": "done",
+    "brakes": "Next time",
+    "mirrors": "okay",
+    "tires": "Next time",
+    "suspensionSystem": "okay"
+}
 
 ###
 GET http://localhost:8080/maintenance/652ae440a15cc2317341738d HTTP/1.1
+###
+GET https://project-portfolio-8g80.onrender.com/maintenance/652ae440a15cc2317341738d HTTP/1.1
