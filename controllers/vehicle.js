@@ -17,7 +17,7 @@ const getVehicleById = async(req, res) => {
         .find({ _id: vehicleId })
         .toArray();
     res.setHeader("Content-Type", "application/json");
-    res.status(201).json(result);
+    res.status(200).json(result);
 };
 
 const createVehicle = async(req, res) => {
@@ -36,7 +36,7 @@ const createVehicle = async(req, res) => {
         .db('portfolio-builder')
         .collection("vehicle")
         .insertOne(createVehicle);
-    res.status(200).json(result);
+    res.status(201).json(result);
 
 };
 

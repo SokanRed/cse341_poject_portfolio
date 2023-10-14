@@ -17,7 +17,7 @@ const getMaintenanceById = async(req, res) => {
         .find({ _id: maintenanceId })
         .toArray();
     res.setHeader("Content-Type", "application/json");
-    res.status(201).json(result);
+    res.status(200).json(result);
 };
 
 const createMaintenance = async(req, res) => {
@@ -36,7 +36,7 @@ const createMaintenance = async(req, res) => {
         .db('portfolio-builder')
         .collection("maintenance")
         .insertOne(createMaintenance);
-    res.status(200).json(result);
+    res.status(201).json(result);
 
 };
 
