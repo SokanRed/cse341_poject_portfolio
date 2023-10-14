@@ -17,7 +17,7 @@ const getVehicleById = async(req, res) => {
         .find({ _id: vehicleId })
         .toArray();
     res.setHeader("Content-Type", "application/json");
-    res.status(200).json(result);
+    res.status(201).json(result);
 };
 
 const createVehicle = async(req, res) => {

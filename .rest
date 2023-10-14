@@ -12,12 +12,12 @@ content-type: application/json
 
 {
     "brand": "Audi",
-    "model": "RS6",
-    "horsePower": "750",
+    "model": "RS7",
+    "horsePower": "630",
     "fuelType": "gas",
-    "color": "Blue",
-    "category": "Avant",
-    "transmission": "Manuel",
+    "color": "Metal Blue",
+    "category": "Sedan",
+    "transmission": "Automatic",
     "numberPassenger": "5"
 }
 ###
@@ -25,13 +25,13 @@ POST https://sokanred341-project-portfolio.onrender.com/vehicle HTTP/1.1
 content-type: application/json
 
 {
-    "brand": "Audi",
-    "model": "RS6",
-    "horsePower": "750",
+    "brand": "Mercedes",
+    "model": "AMG 63",
+    "horsePower": "500",
     "fuelType": "gas",
-    "color": "Blue",
-    "category": "Avant",
-    "transmission": "Manuel",
+    "color": "White",
+    "category": "Sedan",
+    "transmission": "Automatic",
     "numberPassenger": "5"
 }
 
@@ -51,9 +51,9 @@ POST http://localhost:8080/maintenance HTTP/1.1
 content-type: application/json
 
 {
-    "vehicle": "Ford Mustang",
-    "date": "2023/10/10",
-    "mileage": "10 000",
+    "vehicle": "Audi RS7",
+    "date": "2023/08/10",
+    "mileage": "20 000",
     "lubrification": "done",
     "brakes": "Next time",
     "mirrors": "okay",
@@ -78,4 +78,4 @@ content-type: application/json
 ### Get Maintenance by Id
 GET http://localhost:8080/maintenance/652ae440a15cc2317341738d HTTP/1.1
 ###
-GET https://sokanred341-project-portfolio.onrender.com/maintenance/652ae440a15cc2317341738d HTTP/1.1
+GET https://sokanred341-project-portfolio.onrender.com/maintenance/652b0aacaf1439756d87d45f HTTP/1.1

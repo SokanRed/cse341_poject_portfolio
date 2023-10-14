@@ -17,7 +17,7 @@ const getMaintenanceById = async(req, res) => {
         .find({ _id: maintenanceId })
         .toArray();
     res.setHeader("Content-Type", "application/json");
-    res.status(200).json(result);
+    res.status(201).json(result);
 };
 
 const createMaintenance = async(req, res) => {
