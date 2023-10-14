@@ -1,4 +1,4 @@
-Vehicles
+Vehicle
 	_id			        | MongoDB
 	brand			    | String
 	model			    | String

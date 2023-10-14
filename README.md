@@ -1,10 +1,11 @@
 # cse341_poject_portfolio
 
+====
 From week 05 to week 08
 
-==================== 
+====
 Project Requirements
-====================
+
 This is an independent project that you will complete
 as you do your personal assignments for lessons 5-8 in this course.
 
@@ -21,16 +22,27 @@ YouTube video demonstration of roughly 1 minute demonstrating each API route in 
 and showing the database being modified.
 Submit the following links in I-learn: GitHub repo, Render site, and YouTube video.
 
-================
+====
 Grading Criteria
-================
+
 Your assignment will receive a zero if it doesn't have a YouTube link, a GitHub link, AND a Render link submitted in I-learn.
 Your assignment will receive a zero if any type of cheating takes place.
 The grading breakdown is depicted in the rubric below
 
-========================
+==== 
 Extra Credit Opportunity
-========================
+
 20% for using GraphQL instead of REST
 20% for using valid TypeScript for your entire Node project
 Discuss details with your instructor
+
+====
+Personal notes:
+
+LOCALHOST: (check the schemes in swagger.js) 
+"host": "localhost:8080", 
+"basePath": "/", "schemes": [ "http" ],
+
+RENDER: (check the schemes in swagger.js) 
+"host": "sokanred341-personal-assignment.onrender.com", 
+"basePath": "/", "schemes": [ "https" ],

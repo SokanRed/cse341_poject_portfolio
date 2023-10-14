@@ -1,14 +1,15 @@
 const router = require('express').Router();
 
-const myController = require('../controllers');
+const index = require('../controllers');
 
-const contact = require('./maintenance');
+const maintenance = require('./maintenance');
 
-const contact = require('./vehicles');
+const vehicle = require('./vehicle');
 
 const swagger = require('./swagger');
 
-router.use('/', contact)
+router.use('/', vehicle)
+    .use('/', maintenance)
     .use('/api-docs', swagger);
 
 module.exports = router;

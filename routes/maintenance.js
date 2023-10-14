@@ -6,10 +6,10 @@ router.get('/maintenance', controllerMaintenance.getMaintenance);
 
 router.get('/maintenance/:id', controllerMaintenance.getMaintenanceById);
 
-router.post('/maintenance', controllerMaintenance.postMaintenance);
+router.post('/maintenance', controllerMaintenance.createMaintenance);
 
-router.put('/maintenance/:id', controllerMaintenance.putMaintenanceById);
+// router.put('/maintenance/:id', controllerMaintenance.updateMaintenanceById);
 
-router.delete('/maintenance/:id', controllerMaintenance.deleteMaintenanceById);
+// router.delete('/maintenance/:id', controllerMaintenance.deleteMaintenanceById);
 
 module.exports = router;
