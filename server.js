@@ -11,9 +11,17 @@ app
     .use(bodyParser.json())
     .use(cors({ origin: '*' }))
     .use((req, res, next) => {
-        res.setHeader('Access-Control-Allow-Origin', '*');
+        res.header('Access-Control-Allow-Origin', 'https://sokanred341-project-portfolio.onrender.com'); // Replace * with the specific origin you want to allow.
         res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-        next();
+        res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+        res.header('Access-Control-Allow-Credentials', true);
+
+        if (req.method === 'OPTIONS') {
+            res.header('Access-Control-Max-Age', 86400); // 1 day
+            res.sendStatus(204);
+        } else {
+            next();
+        }
     })
     .use('/', require('./routes/index'));
 
