@@ -38,7 +38,7 @@ content-type: application/json
 ### Get Vehicle by Id
 GET http://localhost:8080/vehicle/652acb61a15cc2317341738c HTTP/1.1
 ###
-GET https://sokanred341-project-portfolio.onrender.com/652acb61a15cc2317341738c HTTP/1.1
+GET https://sokanred341-project-portfolio.onrender.com/652b23d9508ce0f50bae7126 HTTP/1.1
 
 ### Maintenance
 ### Get All Maintenances

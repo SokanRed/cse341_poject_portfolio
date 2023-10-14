@@ -8,9 +8,16 @@
         "start": "node server.js",
         "devStart": "nodemon server.js"
     },
-    "keywords": [],
-    "author": "",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SokanRed/cse341_project_portfolio.git"
+    },
+    "author": "Denis 'SokanRed' Poussard",
     "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/SokanRed/cse341_project_portfolio/issues"
+    },
+    "homepage": "https://github.com/SokanRed/cse341_project_portfolio#readme",
     "dependencies": {
         "body-parser": "^1.20.2",
         "cors": "^2.8.5",
@@ -25,5 +32,6 @@
         "nodemon": "^3.0.1",
         "prettier": "^3.0.3",
         "swagger-autogen": "^2.23.6"
-    }
+    },
+    "keywords": []
 }
