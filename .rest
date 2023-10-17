@@ -38,7 +38,10 @@ content-type: application/json
 ### Get Vehicle by Id
 GET http://localhost:8080/vehicle/652acb61a15cc2317341738c HTTP/1.1
 ###
-GET https://sokanred341-project-portfolio.onrender.com/vehicle/652b23d9508ce0f50bae7126 HTTP/1.1
+GET https://sokanred341-project-portfolio.onrender.com/vehicle/652acb61a15cc2317341738c HTTP/1.1
+
+### Delete Vehicle by Id
+DELETE http://localhost:8080/vehicle/652e47367678be70c24c0f05 HTTP/1.1
 
 ### Maintenance
 ### Get All Maintenances
@@ -78,4 +81,7 @@ content-type: application/json
 ### Get Maintenance by Id
 GET http://localhost:8080/maintenance/652ae440a15cc2317341738d HTTP/1.1
 ###
-GET https://sokanred341-project-portfolio.onrender.com/maintenance/652b0aacaf1439756d87d45f HTTP/1.1
+GET https://sokanred341-project-portfolio.onrender.com/maintenance/652ae440a15cc2317341738d HTTP/1.1
+
+### Delete Maintenance by Id
+DELETE http://localhost:8080/maintenance/652e53a499e5043b6667f557 HTTP/1.1

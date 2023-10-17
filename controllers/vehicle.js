@@ -40,4 +40,19 @@ const createVehicle = async(req, res) => {
 
 };
 
-module.exports = { getVehicle, getVehicleById, createVehicle };
+const deleteVehicleById = async(req, res) => {
+    const vehicleId = new ObjectId(req.params.id);
+    const result = await mongodb
+        .getDb()
+        .db('portfolio-builder')
+        .collection("vehicle")
+        .deleteOne({ _id: vehicleId }, true);
+    console.log(result);
+    if (result.deletedCount > 0) {
+        res.status(200).send("Vehicle was deleted from database");
+    } else {
+        res.status(500).json(result.error || 'Some error occurred while deleting the vehicle.')
+    }
+};
+
+module.exports = { getVehicle, getVehicleById, createVehicle, deleteVehicleById };

@@ -40,4 +40,19 @@ const createMaintenance = async(req, res) => {
 
 };
 
-module.exports = { getMaintenance, getMaintenanceById, createMaintenance };
+const deleteMaintenanceById = async(req, res) => {
+    const maintenanceId = new ObjectId(req.params.id);
+    const result = await mongodb
+        .getDb()
+        .db('portfolio-builder')
+        .collection("maintenance")
+        .deleteOne({ _id: maintenanceId }, true);
+    console.log(result);
+    if (result.deletedCount > 0) {
+        res.status(200).send("Maintenance was deleted from database");
+    } else {
+        res.status(500).json(result.error || 'Some error occurred while deleting the maintenance.')
+    }
+};
+
+module.exports = { getMaintenance, getMaintenanceById, createMaintenance, deleteMaintenanceById };

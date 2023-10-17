@@ -10,6 +10,6 @@ router.post('/vehicle', controllerVehicle.createVehicle);
 
 // router.put('/vehicle/:id', controllerVehicle.putVehicleById);
 
-// router.delete('/vehicle/:id', controllerVehicle.deleteVehicleById);
+router.delete('/vehicle/:id', controllerVehicle.deleteVehicleById);
 
 module.exports = router;

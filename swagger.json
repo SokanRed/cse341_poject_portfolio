@@ -5,7 +5,7 @@
         "description": "Contact API",
         "version": "1.0.0"
     },
-    "host": "https://sokanred341-project-portfolio.onrender.com",
+    "host": "sokanred341-project-portfolio.onrender.com",
     "basePath": "/",
     "tags": [{
             "name": "vehicle",
@@ -111,6 +111,24 @@
                 }
             }
         },
+        "delete": {
+            "tags": ["vehicle"],
+            "description": "Delete Vehicle",
+            "parameters": [{
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }],
+            "responses": {
+                "200": {
+                    "description": "Deleted"
+                },
+                "500": {
+                    "description": "Internal Server Error"
+                }
+            }
+        },
         "/maintenance/": {
             "get": {
                 "tags": ["maintenance"],
@@ -189,7 +207,26 @@
                         "description": "OK"
                     }
                 }
+            },
+            "delete": {
+                "tags": ["maintenance"],
+                "description": "Delete Maintenance",
+                "parameters": [{
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }],
+                "responses": {
+                    "200": {
+                        "description": "Deleted"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
             }
         }
+
     }
 }
