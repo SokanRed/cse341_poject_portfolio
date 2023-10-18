@@ -36,7 +36,11 @@ const createVehicle = async(req, res) => {
         .db('portfolio-builder')
         .collection("vehicle")
         .insertOne(createVehicle);
-    res.status(201).json(result);
+    if (result.acknowledged) {
+        res.status(201).json(result);
+    } else {
+        res.status(500).json(result.error || 'Some error occurred while creating the vehicle.');
+    }
 
 };
 

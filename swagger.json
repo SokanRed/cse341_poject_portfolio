@@ -9,7 +9,7 @@
     "basePath": "/",
     "tags": [{
             "name": "vehicle",
-            "description": "Operation about vehicles"
+            "description": "Operation about vehicle"
         },
         {
             "name": "maintenance",
