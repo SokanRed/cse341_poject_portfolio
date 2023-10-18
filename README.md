@@ -35,14 +35,3 @@ Extra Credit Opportunity
 20% for using GraphQL instead of REST
 20% for using valid TypeScript for your entire Node project
 Discuss details with your instructor
-
-====
-Personal notes:
-
-LOCALHOST: (check the schemes in swagger.json) 
-"host": "localhost:8080", 
-"basePath": "/", "schemes": [ "http" ],
-
-RENDER: (check the schemes in swagger.json) 
-"host": "sokanred341-project-portfolio.onrender.com", 
-"basePath": "/", "schemes": [ "https" ],
