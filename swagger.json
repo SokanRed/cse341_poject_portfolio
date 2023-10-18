@@ -2,7 +2,7 @@
     "swagger": "2.0",
     "info": {
         "title": "My API",
-        "description": "Contact API",
+        "description": "Vehicle API",
         "version": "1.0.0"
     },
     "host": "sokanred341-project-portfolio.onrender.com",
@@ -109,23 +109,75 @@
                         "description": "OK"
                     }
                 }
-            }
-        },
-        "delete": {
-            "tags": ["vehicle"],
-            "description": "Delete Vehicle",
-            "parameters": [{
-                "name": "id",
-                "in": "path",
-                "required": true,
-                "type": "string"
-            }],
-            "responses": {
-                "200": {
-                    "description": "Deleted"
-                },
-                "500": {
-                    "description": "Internal Server Error"
+            },
+            "put": {
+                "tags": ["vehicle"],
+                "description": "Update vehicle",
+                "parameters": [{
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "brand": {
+                                    "example": "any"
+                                },
+                                "model": {
+                                    "example": "any"
+                                },
+                                "horsePower": {
+                                    "example": "any"
+                                },
+                                "fueltype": {
+                                    "example": "any"
+                                },
+                                "color": {
+                                    "example": "any"
+                                },
+                                "category": {
+                                    "example": "any"
+                                },
+                                "transmission": {
+                                    "example": "any"
+                                },
+                                "numberPassenger": {
+                                    "example": "any"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            },
+            "delete": {
+                "tags": ["vehicle"],
+                "description": "Delete Vehicle",
+                "parameters": [{
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }],
+                "responses": {
+                    "200": {
+                        "description": "Deleted"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
                 }
             }
         },
@@ -205,6 +257,58 @@
                 "responses": {
                     "200": {
                         "description": "OK"
+                    }
+                }
+            },
+            "put": {
+                "tags": ["maintenance"],
+                "description": "Update maintenance",
+                "parameters": [{
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "vehicle": {
+                                    "example": "any"
+                                },
+                                "date": {
+                                    "example": "any"
+                                },
+                                "mileage": {
+                                    "example": "any"
+                                },
+                                "lubrification": {
+                                    "example": "any"
+                                },
+                                "brakes": {
+                                    "example": "any"
+                                },
+                                "mirrors": {
+                                    "example": "any"
+                                },
+                                "tires": {
+                                    "example": "any"
+                                },
+                                "suspensionSystem": {
+                                    "example": "any"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
                     }
                 }
             },

@@ -8,7 +8,7 @@ router.get('/maintenance/:id', controllerMaintenance.getMaintenanceById);
 
 router.post('/maintenance', controllerMaintenance.createMaintenance);
 
-// router.put('/maintenance/:id', controllerMaintenance.updateMaintenanceById);
+router.put('/maintenance/:id', controllerMaintenance.updateMaintenanceById);
 
 router.delete('/maintenance/:id', controllerMaintenance.deleteMaintenanceById);
 

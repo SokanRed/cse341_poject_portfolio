@@ -40,6 +40,31 @@ const createMaintenance = async(req, res) => {
 
 };
 
+const updateMaintenanceById = async(req, res) => {
+    const maintenanceId = new ObjectId(req.params.id);
+    const updateMaintenance = {
+        vehicle: req.body.vehicle,
+        date: req.body.date,
+        mileage: req.body.mileage,
+        lubrification: req.body.lubrification,
+        brakes: req.body.brakes,
+        mirrors: req.body.mirrors,
+        tires: req.body.tires,
+        suspensionSystem: req.body.suspensionSystem
+    };
+    const result = await mongodb
+        .getDb()
+        .db('portfolio-builder')
+        .collection("maintenance")
+        .replaceOne({ _id: maintenanceId }, updateMaintenance);
+    console.log(response);
+    if (result.modifiedCount > 0) {
+        res.status(204).send("Maintenance was updated.");
+    } else {
+        res.status(500).json(result.error || 'Some error occurred while updating the maintenance.');
+    }
+};
+
 const deleteMaintenanceById = async(req, res) => {
     const maintenanceId = new ObjectId(req.params.id);
     const result = await mongodb
@@ -55,4 +80,4 @@ const deleteMaintenanceById = async(req, res) => {
     }
 };
 
-module.exports = { getMaintenance, getMaintenanceById, createMaintenance, deleteMaintenanceById };
+module.exports = { getMaintenance, getMaintenanceById, createMaintenance, updateMaintenanceById, deleteMaintenanceById };

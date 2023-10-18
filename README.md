@@ -39,10 +39,10 @@ Discuss details with your instructor
 ====
 Personal notes:
 
-LOCALHOST: (check the schemes in swagger.js) 
+LOCALHOST: (check the schemes in swagger.json) 
 "host": "localhost:8080", 
 "basePath": "/", "schemes": [ "http" ],
 
-RENDER: (check the schemes in swagger.js) 
-"host": "https://project-portfolio.onrender.com", 
+RENDER: (check the schemes in swagger.json) 
+"host": "sokanred341-project-portfolio.onrender.com", 
 "basePath": "/", "schemes": [ "https" ],
