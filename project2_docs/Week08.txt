@@ -1,0 +1,29 @@
+============ Overview
+
+============ Purpose: Implement an authentication system.
+Task: Complete the assignment.
+
+============ Learning Objectives
+By the end of this assignment the student will be able to do the following:
+
+Deploy Node.js API to the web
+Incorporate authentication system with OAuth into Node.js application
+Host GET, POST, PUT and DELETE endpoints in application
+Produce API documentation that allows API testing
+Validate all data before processing API requests
+Handle errors in application
+
+============ Assignment Description
+For your personal assignment you will complete your project that you started in lesson 5. You should already have all of your routes set up with documentation, validation, error handling, and so on. Now, you will also add security either through JWTs or some from of OAuth.
+
+Please be sure to review the project requirements and rubric.
+For this assignment (if you have not done so already), you will add security measures to your personal project using OAuth. The user should be able to create an account, log in and log out successfully, and view things that aren't available if they are not logged in.
+If you store user credentials in MongoDB, be sure to use bcrypt (or a package of your choosing) to hash passwords so no plain-text passwords are ever stored in the database.
+Be sure your Swagger documentation is accurate, including all of your security measures (and routes that have been effected by these measures).
+Once completed, push any changes to GitHub and verify changes in Render.
+Record a brief video demonstration that shows you using the Swagger documentation successfully sending requests to each route. Also include evidence that your MongoDB cluster is being updated.
+Post this video to YouTube (public or unlisted are both fine, whatever you prefer).
+Submit the following links in I-Learn (Your assignment will receive a zero if these three links are not included)
+GitHub repo
+Render site API Contracts (it should be formatted like this: https://cse341-code-student.onrender.com//api-docs)
+YouTube video

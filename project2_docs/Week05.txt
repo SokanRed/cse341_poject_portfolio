@@ -1,5 +1,6 @@
 ============ Overview
-Purpose: Start developing a new API.
+
+============ Purpose: Start developing a new API.
 Task: Complete the assignment.
 
 ============ Learning Objectives

@@ -68,9 +68,9 @@ POST https://sokanred341-project-portfolio.onrender.com/maintenance HTTP/1.1
 content-type: application/json
 
 {
-    "vehicle": "Ford Mustang",
-    "date": "2023/10/10",
-    "mileage": "10 000",
+    "vehicle": "Ford Mondeo",
+    "date": "2010/10/10",
+    "mileage": "30 000",
     "lubrification": "done",
     "brakes": "Next time",
     "mirrors": "okay",
@@ -84,4 +84,4 @@ GET http://localhost:8080/maintenance/652ae440a15cc2317341738d HTTP/1.1
 GET https://sokanred341-project-portfolio.onrender.com/maintenance/652ae440a15cc2317341738d HTTP/1.1
 
 ### Delete Maintenance by Id
-DELETE http://localhost:8080/maintenance/652e53a499e5043b6667f557 HTTP/1.1
+DELETE http://localhost:8080/maintenance/65302b8bd6728dcc5fb7d33f HTTP/1.1

@@ -1,11 +1,12 @@
 ============ Overview
-Purpose: Gain experience performing CRUD operations
+
+============ Purpose: Gain experience performing CRUD operations
 Task: Complete the assignment
 
 ============ Learning Objectives
 By the end of this assignment the student will be able to do the following:
 
-============ Create PUT and DELETE API endpoints
+Create PUT and DELETE API endpoints
 Incorporate data validation into Node.js application
 Incorporate error handling into Node.js application
 Document API routes throughout project development

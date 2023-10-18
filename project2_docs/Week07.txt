@@ -1,0 +1,22 @@
+============= Overview
+
+============= Purpose: Gain experience developing a modern API
+Task: Complete the assignment
+
+============= Learning Objectives
+By the end of this assignment the student will be able to do the following:
+
+Continue learning through continued development efforts
+
+============= Assignment Description
+For your personal assignment you will work on your project that you've been working on since lesson 05.
+
+Your assignment this lesson is to simply work on your project. Please be sure to review the project requirements and rubric so you know what all to include by the end of lesson 08.
+Be aware that your project will require a login system. You are encouraged to start implementing this with OAuth during this lesson.
+As you work on your project, make frequent commits. The instructor should be able to see your project progressing. This will also help you to finish in a timely manner.
+In lesson 08, you will need to have a login system implemented in your application. So the more you can finish this lesson, the better.
+Push to GitHub.
+Publish to Render.
+Create a brief video demonstrating the functionality of your assignment. Upload it to YouTube (public or unlisted).
+Submit GitHub, Render, and YouTube links in I-Learn.
+Be sure to review the rubric below to see how you will be graded on this assignment.
