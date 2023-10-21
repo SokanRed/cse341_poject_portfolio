@@ -1,4 +1,4 @@
-const swaggerAutogen = require('swagger-autogen)')();
+const swaggerAutogen = require('./node_modules/swagger-autogen')();
 
 const doc = {
     info: {
@@ -9,7 +9,8 @@ const doc = {
     schemes: ['https'],
 };
 
-const outputFile = './swagger.json';
+// const outputFile = './swagger.json';
+const outputFile = './swagger_1.json';
 const endpointsFiles = ['./routes/index.js'];
 
 // generate swagger.json

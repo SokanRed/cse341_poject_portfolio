@@ -1,0 +1,366 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "My API",
+        "description": "Vehicle API",
+        "version": "1.0.0"
+    },
+    "host": "sokanred341-project-portfolio.onrender.com",
+    "basePath": "/",
+    "tags": [{
+            "name": "vehicle",
+            "description": "Operation about vehicle"
+        },
+        {
+            "name": "maintenance",
+            "description": "Operation about maintenance"
+        },
+        {
+            "name": "Not Yet Implemented",
+            "description": "These API endpoints are designed and will be created later on"
+        }
+    ],
+    "schemes": [
+        "https"
+    ],
+    "paths": {
+        "/vehicle": {
+            "get": {
+                "tags": ["vehicle"],
+                "description": "Get all vehicles",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            },
+            "post": {
+                "tags": ["vehicle"],
+                "description": "Created vehicle",
+                "parameters": [{
+                    "name": "body",
+                    "in": "body",
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "brand": {
+                                "example": "Ford"
+                            },
+                            "model": {
+                                "example": "Mustang Shelby GT500 Code Red"
+                            },
+                            "horsePower": {
+                                "example": "1300"
+                            },
+                            "fuelType": {
+                                "example": "gas"
+                            },
+                            "color": {
+                                "example": "Black"
+                            },
+                            "category": {
+                                "example": "Sport"
+                            },
+                            "transmission": {
+                                "example": "Automatic"
+                            },
+                            "numberPassenger": {
+                                "example": "4"
+                            }
+                        }
+                    }
+                }],
+                "responses": {
+                    "201": {
+                        "description": "Created"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/vehicle/{id}": {
+            "get": {
+                "tags": ["vehicle"],
+                "description": "Get vehicle by Id",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [{
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            },
+            "put": {
+                "tags": ["vehicle"],
+                "description": "Update vehicle",
+                "parameters": [{
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "brand": {
+                                    "example": "Mercedes"
+                                },
+                                "model": {
+                                    "example": "MayBach"
+                                },
+                                "horsePower": {
+                                    "example": "750"
+                                },
+                                "fuelType": {
+                                    "example": "gas"
+                                },
+                                "color": {
+                                    "example": "White"
+                                },
+                                "category": {
+                                    "example": "Sedan"
+                                },
+                                "transmission": {
+                                    "example": "Automatic"
+                                },
+                                "numberPassenger": {
+                                    "example": "4"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            },
+            "delete": {
+                "tags": ["vehicle"],
+                "description": "Delete Vehicle",
+                "parameters": [{
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/maintenance": {
+            "get": {
+                "tags": ["maintenance"],
+                "description": "Get all maintenance",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            },
+            "post": {
+                "tags": ["maintenance"],
+                "description": "Created maintenance",
+                "parameters": [{
+                    "name": "body",
+                    "in": "body",
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "vehicle": {
+                                "example": "Lamgorghini Aventador"
+                            },
+                            "date": {
+                                "example": "2022/05/22"
+                            },
+                            "mileage": {
+                                "example": "5000"
+                            },
+                            "lubrification": {
+                                "example": "Done"
+                            },
+                            "brakes": {
+                                "example": "Next Visite"
+                            },
+                            "mirrors": {
+                                "example": "No Need"
+                            },
+                            "tires": {
+                                "example": "Done"
+                            },
+                            "suspensionSystem": {
+                                "example": "No Need"
+                            }
+                        }
+                    }
+                }],
+                "responses": {
+                    "201": {
+                        "description": "Created"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/maintenance/{id}": {
+            "get": {
+                "tags": ["maintenance"],
+                "description": "Get maintenance by Id",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [{
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            },
+            "put": {
+                "tags": ["maintenance"],
+                "description": "Update maintenance",
+                "parameters": [{
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "vehicle": {
+                                    "example": "Nissan GT 500"
+                                },
+                                "date": {
+                                    "example": "2021/06/18"
+                                },
+                                "mileage": {
+                                    "example": "10000"
+                                },
+                                "lubrification": {
+                                    "example": "Done"
+                                },
+                                "brakes": {
+                                    "example": "Done"
+                                },
+                                "mirrors": {
+                                    "example": "No Need"
+                                },
+                                "tires": {
+                                    "example": "Next Visite"
+                                },
+                                "suspensionSystem": {
+                                    "example": "No Need"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            },
+            "delete": {
+                "tags": ["maintenance"],
+                "description": "Delete Maintenance",
+                "parameters": [{
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api-docs/": {
+            "get": {
+                "description": "This will be eventualy be created.",
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        }
+    }
+}

@@ -17,7 +17,11 @@ const getMaintenanceById = async(req, res) => {
         .find({ _id: maintenanceId })
         .toArray();
     res.setHeader("Content-Type", "application/json");
-    res.status(200).json(result);
+    if (result.acknowledged) {
+        res.status(200).json(result);
+    } else {
+        res.status(500).json(result.error || `There is no maintenance with this Id:  ${maintenanceId}.`);
+    }
 };
 
 const createMaintenance = async(req, res) => {
@@ -79,7 +83,7 @@ const deleteMaintenanceById = async(req, res) => {
     if (result.deletedCount > 0) {
         res.status(200).send("Maintenance was deleted from database");
     } else {
-        res.status(500).json(result.error || 'Some error occurred while deleting the maintenance.')
+        res.status(500).json(result.error || `There is no maintenance with this Id:  ${maintenanceId}.`)
     }
 };
 

@@ -17,7 +17,11 @@ const getVehicleById = async(req, res) => {
         .find({ _id: vehicleId })
         .toArray();
     res.setHeader("Content-Type", "application/json");
-    res.status(200).json(result);
+    if (result.acknowledged) {
+        res.status(200).json(result);
+    } else {
+        res.status(500).json(result.error || `There is no vehicle with this Id:  ${vehicleId}.`);
+    }
 };
 
 const createVehicle = async(req, res) => {
@@ -41,7 +45,6 @@ const createVehicle = async(req, res) => {
     } else {
         res.status(500).json(result.error || 'Some error occurred while creating the vehicle.');
     }
-
 };
 
 const updateVehicleById = async(req, res) => {
@@ -61,7 +64,7 @@ const updateVehicleById = async(req, res) => {
         .db('portfolio-builder')
         .collection("vehicle")
         .replaceOne({ _id: vehicleId }, updateVehicle);
-    console.log(response);
+    console.log(result);
     if (result.modifiedCount > 0) {
         res.status(204).send("Vehicle was updated.");
     } else {
@@ -80,7 +83,7 @@ const deleteVehicleById = async(req, res) => {
     if (result.deletedCount > 0) {
         res.status(200).send("Vehicle was deleted from database.");
     } else {
-        res.status(500).json(result.error || 'Some error occurred while deleting the vehicle.')
+        res.status(500).json(result.error || `There is no vehicle with this Id:  ${vehicleId}.`)
     }
 };
 
