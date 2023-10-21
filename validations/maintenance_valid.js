@@ -16,33 +16,33 @@ const maintenanceDataValidate = [
     body("lubrification")
     .exists()
     .isString()
-    .withMessage("Answer for lubrification should be 'No Need', 'Next Visite', or 'Done'.")
+    .withMessage("Answer should be 'No Need', 'Next Visite', or 'Done'.")
     .isIn(["No Need", "Next Visite", "Done"])
-    .withMessage("Answer should be 'No Need', 'Next Visite', or 'Done'."),
+    .withMessage("Answer for lubrification should be 'No Need', 'Next Visite', or 'Done'."),
     body("brakes")
     .exists()
     .isString()
-    .withMessage("Answer for brakes should be 'No Need', 'Next Visite', or 'Done'.")
+    .withMessage("Answer should be 'No Need', 'Next Visite', or 'Done'.")
     .isIn(["No Need", "Next Visite", "Done"])
-    .withMessage("Answer should be 'No Need', 'Next Visite', or 'Done'."),
+    .withMessage("Answer for brakes should be 'No Need', 'Next Visite', or 'Done'."),
     body("mirrors")
     .exists()
     .isString()
-    .withMessage("Answer for mirrors should be 'No Need', 'Next Visite', or 'Done'.")
+    .withMessage("Answer should be 'No Need', 'Next Visite', or 'Done'.")
     .isIn(["No Need", "Next Visite", "Done"])
-    .withMessage("Answer should be 'No Need', 'Next Visite', or 'Done'."),
+    .withMessage("Answer for mirrors should be 'No Need', 'Next Visite', or 'Done'."),
     body("tires")
     .exists()
     .isString()
-    .withMessage("Answer for tires should be 'No Need', 'Next Visite', or 'Done'.")
+    .withMessage("Answer should be 'No Need', 'Next Visite', or 'Done'.")
     .isIn(["No Need", "Next Visite", "Done"])
-    .withMessage("Answer should be 'No Need', 'Next Visite', or 'Done'."),
+    .withMessage("Answer for tires should be 'No Need', 'Next Visite', or 'Done'."),
     body("suspensionSystem")
     .exists()
     .isString()
-    .withMessage("Answer for suspension system should be 'No Need', 'Next Visite', or 'Done'.")
+    .withMessage("Answer should be 'No Need', 'Next Visite', or 'Done'.")
     .isIn(["No Need", "Next Visite", "Done"])
-    .withMessage("Answer should be 'No Need', 'Next Visite', or 'Done'."),
+    .withMessage("Answer for suspension system should be 'No Need', 'Next Visite', or 'Done'."),
 ];
 
 const maintenanceIdValidate = [
