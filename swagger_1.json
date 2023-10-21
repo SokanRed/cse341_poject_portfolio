@@ -8,11 +8,11 @@
     "host": "sokanred341-project-portfolio.onrender.com",
     "basePath": "/",
     "tags": [{
-            "name": "vehicle",
+            "name": "Vehicle",
             "description": "Operation about vehicle"
         },
         {
-            "name": "maintenance",
+            "name": "Maintenance",
             "description": "Operation about maintenance"
         },
         {
@@ -194,13 +194,16 @@
         "/maintenance": {
             "get": {
                 "tags": ["maintenance"],
-                "description": "Get all maintenance",
+                "description": "Get all maintenances",
                 "produces": [
                     "application/json"
                 ],
                 "responses": {
                     "200": {
                         "description": "OK"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
                     }
                 }
             },

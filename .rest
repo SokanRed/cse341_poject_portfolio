@@ -125,7 +125,7 @@ content-type: application/json
     "lubrification": "done",
     "brakes": "Next time",
     "mirrors": "okay",
-    "tires": "done",
+    "tires": "Done",
     "suspensionSystem": "okay"
 }
 ###
@@ -137,13 +137,13 @@ content-type: application/json
     "date": "2022/08/10",
     "mileage": "40 000",
     "lubrification": "done",
-    "brakes": "Next time",
+    "brakes": "Next Visite",
     "mirrors": "okay",
-    "tires": "done",
+    "tires": "Done",
     "suspensionSystem": "okay"
 }
 
 ### Delete Maintenance by Id
 DELETE http://localhost:8080/maintenance/65302b8bd6728dcc5fb7d33f HTTP/1.1
 ###
-DELETE https://sokanred341-project-portfolio.onrender.com/maintenance/65302b8bd6728dcc5fb7d HTTP/1.1
+DELETE https://sokanred341-project-portfolio.onrender.com/maintenance/65302b8bd6728dcc5fb7d33f HTTP/1.1
