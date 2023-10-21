@@ -26,7 +26,7 @@
     "paths": {
         "/vehicle": {
             "get": {
-                "tags": ["vehicle"],
+                "tags": ["Vehicle"],
                 "description": "Get all vehicles",
                 "produces": [
                     "application/json"
@@ -41,7 +41,7 @@
                 }
             },
             "post": {
-                "tags": ["vehicle"],
+                "tags": ["Vehicle"],
                 "description": "Created vehicle",
                 "parameters": [{
                     "name": "body",
@@ -91,7 +91,7 @@
         },
         "/vehicle/{id}": {
             "get": {
-                "tags": ["vehicle"],
+                "tags": ["Vehicle"],
                 "description": "Get vehicle by Id",
                 "produces": [
                     "application/json"
@@ -115,7 +115,7 @@
                 }
             },
             "put": {
-                "tags": ["vehicle"],
+                "tags": ["Vehicle"],
                 "description": "Update vehicle",
                 "parameters": [{
                         "name": "id",
@@ -170,7 +170,7 @@
                 }
             },
             "delete": {
-                "tags": ["vehicle"],
+                "tags": ["Vehicle"],
                 "description": "Delete Vehicle",
                 "parameters": [{
                     "name": "id",
@@ -193,7 +193,7 @@
         },
         "/maintenance": {
             "get": {
-                "tags": ["maintenance"],
+                "tags": ["Maintenance"],
                 "description": "Get all maintenances",
                 "produces": [
                     "application/json"
@@ -208,7 +208,7 @@
                 }
             },
             "post": {
-                "tags": ["maintenance"],
+                "tags": ["Maintenance"],
                 "description": "Created maintenance",
                 "parameters": [{
                     "name": "body",
@@ -258,7 +258,7 @@
         },
         "/maintenance/{id}": {
             "get": {
-                "tags": ["maintenance"],
+                "tags": ["Maintenance"],
                 "description": "Get maintenance by Id",
                 "produces": [
                     "application/json"
@@ -282,7 +282,7 @@
                 }
             },
             "put": {
-                "tags": ["maintenance"],
+                "tags": ["Maintenance"],
                 "description": "Update maintenance",
                 "parameters": [{
                         "name": "id",
@@ -337,7 +337,7 @@
                 }
             },
             "delete": {
-                "tags": ["maintenance"],
+                "tags": ["Maintenance"],
                 "description": "Delete Maintenance",
                 "parameters": [{
                     "name": "id",
