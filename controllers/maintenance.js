@@ -6,6 +6,11 @@ const ObjectId = require('mongodb').ObjectId;
 const getMaintenance = async(req, res) => {
     const Db = await mongodb.getDb().db('portfolio-builder').collection("maintenance").find().toArray();
     res.send(Db);
+    if (result.acknowledged) {
+        res.status(200).json(result);
+    } else {
+        res.status(500).json(result.error || 'Some error occurred while searching maintenances.');
+    }
 };
 
 const getMaintenanceById = async(req, res) => {
