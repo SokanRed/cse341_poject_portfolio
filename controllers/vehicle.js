@@ -6,6 +6,11 @@ const ObjectId = require('mongodb').ObjectId;
 const getVehicle = async(req, res) => {
     const Db = await mongodb.getDb().db('portfolio-builder').collection("vehicle").find().toArray();
     res.send(Db);
+    if (result.acknowledged) {
+        res.status(200).json(result);
+    } else {
+        res.status(500).json(result.error || 'Some error occurred while searching vehicles.');
+    }
 };
 
 const getVehicleById = async(req, res) => {
