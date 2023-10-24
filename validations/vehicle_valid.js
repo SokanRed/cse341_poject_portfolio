@@ -12,7 +12,7 @@ const vehicleDataValidate = [
     body("horsePower")
     .exists()
     .isString()
-    .withMessage("Enter number as a string."),
+    .withMessage("Enter number of horse power as a string."),
     body("fuelType")
     .exists()
     .isString()

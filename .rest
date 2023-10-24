@@ -11,14 +11,14 @@ POST http://localhost:8080/vehicle HTTP/1.1
 content-type: application/json
 
 {
-    "brand": 780,
-    "model": "RS7",
-    "horsePower": "630",
+    "brand": "McLaren",
+    "model": "750S",
+    "horsePower": "530",
     "fuelType": "gas",
-    "color": "white",
-    "category": "Sedan",
+    "color": "Red",
+    "category": "Spider",
     "transmission": "Automatic",
-    "numberPassenger": "5"
+    "numberPassenger": "2"
 }
 ###
 POST https://sokanred341-project-portfolio.onrender.com/vehicle HTTP/1.1
@@ -36,23 +36,23 @@ content-type: application/json
 }
 
 ### Get Vehicle by Id
-GET http://localhost:8080/vehicle/65360ec314ec8015e2197ae0 HTTP/1.1
+GET http://localhost:8080/vehicle/653783a6f630f072024e2c18 HTTP/1.1
 ###
-GET https://sokanred341-project-portfolio.onrender.com/vehicle/65360ec314ec8015e2197ae0 HTTP/1.1
+GET https://sokanred341-project-portfolio.onrender.com/vehicle/65378f9c6569bd4cc8a00f7b HTTP/1.1
 
 ### Update vehicle by Id
-PUT http://localhost:8080/vehicle/652b0e14af1439756d87d4 HTTP/1.1
+PUT http://localhost:8080/vehicle/65378d6880c0f937691a42f1 HTTP/1.1
 content-type: application/json
 
 {
-    "brand": "AUDI",
-    "model": "RS7",
-    "horsePower": "630",
+    "brand": "Aston Martin",
+    "model": "DB 12",
+    "horsePower": "680",
     "fuelType": "gas",
-    "color": "white",
-    "category": "Sedan",
+    "color": "Green",
+    "category": "Super Tourer",
     "transmission": "Automatic",
-    "numberPassenger": "5"
+    "numberPassenger": "2"
 }
 ###
 PUT https://sokanred341-project-portfolio.onrender.com/vehicle/65342d5e0a4932f832b52035 HTTP/1.1
@@ -70,7 +70,7 @@ content-type: application/json
 }
 
 ### Delete Vehicle by Id
-DELETE http://localhost:8080/vehicle/652e47367678be70c24c0f05 HTTP/1.1
+DELETE http://localhost:8080/vehicle/653783a6f630f057024e2c18 HTTP/1.1
 ### 
 DELETE https://sokanred341-project-portfolio.onrender.com/vehicle/652e47367678be70c24c0f05 HTTP/1.1
 

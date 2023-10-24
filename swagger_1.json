@@ -5,9 +5,9 @@
         "description": "Vehicle API",
         "version": "1.0.0"
     },
-    "host": "localhost:8080",
+    "host": "sokanred341-project-portfolio.onrender.com",
     "schemes": [
-        "http"
+        "https"
     ],
     "basePath": "/",
     "tags": [{
@@ -158,7 +158,7 @@
                     }
                 ],
                 "responses": {
-                    "204": {
+                    "200": {
                         "description": "No Content"
                     },
                     "422": {
