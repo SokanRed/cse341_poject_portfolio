@@ -21,7 +21,7 @@ const getVehicleById = async(req, res) => {
         .collection("vehicle")
         .find({ _id: vehicleId })
         .toArray();
-    res.setHeader("Content-Type", "application/json");
+    // res.setHeader("Content-Type", "application/json");
     if (result.acknowledged) {
         res.status(200).json(result);
     } else {

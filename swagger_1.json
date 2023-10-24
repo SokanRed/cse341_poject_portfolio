@@ -5,7 +5,10 @@
         "description": "Vehicle API",
         "version": "1.0.0"
     },
-    "host": "sokanred341-project-portfolio.onrender.com",
+    "host": "localhost:8080",
+    "schemes": [
+        "http"
+    ],
     "basePath": "/",
     "tags": [{
             "name": "Vehicle",
@@ -19,9 +22,6 @@
             "name": "Not Yet Implemented",
             "description": "These API endpoints are designed and will be created later on"
         }
-    ],
-    "schemes": [
-        "https"
     ],
     "paths": {
         "/vehicle": {

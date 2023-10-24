@@ -25,27 +25,27 @@ POST https://sokanred341-project-portfolio.onrender.com/vehicle HTTP/1.1
 content-type: application/json
 
 {
-    "brand": "Mercedes",
-    "model": "AMG 63",
-    "horsePower": "500",
+    "brand": "AUDI",
+    "model": "R8 GT",
+    "horsePower": "620",
     "fuelType": "gas",
     "color": "White",
-    "category": "Sedan",
+    "category": "Sort",
     "transmission": "Automatic",
-    "numberPassenger": "5"
+    "numberPassenger": "2"
 }
 
 ### Get Vehicle by Id
-GET http://localhost:8080/vehicle/653421324528fa018ce1c079 HTTP/1.1
+GET http://localhost:8080/vehicle/65360ec314ec8015e2197ae0 HTTP/1.1
 ###
-GET https://sokanred341-project-portfolio.onrender.com/vehicle/652acb61a15cc2317341738c HTTP/1.1
+GET https://sokanred341-project-portfolio.onrender.com/vehicle/65360ec314ec8015e2197ae0 HTTP/1.1
 
 ### Update vehicle by Id
 PUT http://localhost:8080/vehicle/652b0e14af1439756d87d4 HTTP/1.1
 content-type: application/json
 
 {
-    "brand": 585,
+    "brand": "AUDI",
     "model": "RS7",
     "horsePower": "630",
     "fuelType": "gas",
@@ -55,16 +55,16 @@ content-type: application/json
     "numberPassenger": "5"
 }
 ###
-PUT https://sokanred341-project-portfolio.onrender.com/vehicle/652b0e14af1439756d87d4 HTTP/1.1
+PUT https://sokanred341-project-portfolio.onrender.com/vehicle/65342d5e0a4932f832b52035 HTTP/1.1
 content-type: application/json
 
 {
-    "brand": 585,
-    "model": "RS7",
+    "brand": "AUDI",
+    "model": "SQ7",
     "horsePower": "630",
     "fuelType": "gas",
-    "color": "white",
-    "category": "Sedan",
+    "color": "Red",
+    "category": "SUV",
     "transmission": "Automatic",
     "numberPassenger": "5"
 }
