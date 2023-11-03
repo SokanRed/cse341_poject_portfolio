@@ -6,6 +6,6 @@ module.exports = {
         clientSecret: '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'
     },
     mongodb: {
-        dbURI: 'mongodb+srv://dernakos:Sp3gno24Lini@cluster0.cpiccp7.mongodb.net/?retryWrites=true&w=majority'
+        URI: 'mongodb+srv://dernakos:Sp3gno24Lini@cluster0.cpiccp7.mongodb.net/?retryWrites=true&w=majority'
     }
 };

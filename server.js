@@ -20,7 +20,7 @@ require('./config/passport-setup')(passport);
 app.set('view engine', 'ejs');
 
 //  connect to mongodb
-mongoose.connect(keys.mongodb.dbURI)
+mongoose.connect(keys.mongodb.URI)
     .then(() => {
         console.log('Connected to MongoDB');
     })
