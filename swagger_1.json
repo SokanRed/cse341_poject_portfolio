@@ -15,7 +15,7 @@
                 "type": "oauth2",
                 "flows": {
                     "authorizationCode": {
-                        "authorizationUrl": "https://sokanred341-project-portfolio.onrender.com/auth/google",
+                        "authorizationUrl": "https://sokanred341-project-portfolio.onrender.com/auth/google/redirect",
                         "scopes": {
                             "profile": "Read access"
                         }
