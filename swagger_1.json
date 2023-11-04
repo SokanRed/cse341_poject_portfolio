@@ -9,6 +9,21 @@
     "schemes": [
         "https"
     ],
+    "components": {
+        "securitySchemes": {
+            "OAuth2": {
+                "type": "oauth2",
+                "flows": {
+                    "authorizationCode": {
+                        "authorizationUrl": "http://localhost:8080/api-docs",
+                        "scopes": {
+                            "profile": "Read access"
+                        }
+                    }
+                }
+            }
+        }
+    },
     "basePath": "/",
     "tags": [{
             "name": "Vehicle",
