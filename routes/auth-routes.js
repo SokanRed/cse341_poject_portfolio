@@ -19,7 +19,7 @@ router.get('/google', passport.authenticate('google', {
 
 //  callback route for google to redirect to
 router.get('/google/redirect', passport.authenticate('google'), (req, res) => {
-    res.redirect('http://sokanred341-project-portfolio.onrender.com/api-docs');
+    res.redirect('https://sokanred341-project-portfolio.onrender.com/api-docs');
     // res.send('you reached the callback URI');
 });
 
