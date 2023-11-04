@@ -1,7 +1,6 @@
 const express = require('express');
 const session = require('express-session');
 const bodyParser = require('body-parser');
-// const expressValidator = require('express-validator');
 const mongodb = require('./db/connect');
 
 // Import the cors middleware
