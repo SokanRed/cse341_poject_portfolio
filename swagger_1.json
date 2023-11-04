@@ -7,7 +7,7 @@
     },
     "host": "sokanred341-project-portfolio.onrender.com",
     "schemes": [
-        "https"
+        "https", "http"
     ],
     "components": {
         "securitySchemes": {
