@@ -5,9 +5,9 @@
         "description": "Vehicle API",
         "version": "1.0.0"
     },
-    "host": "sokanred341-project-portfolio.onrender.com",
+    "host": "https://sokanred341-project-portfolio.onrender.com",
     "schemes": [
-        "https", "http"
+        "https"
     ],
     "components": {
         "securitySchemes": {
@@ -15,7 +15,7 @@
                 "type": "oauth2",
                 "flows": {
                     "authorizationCode": {
-                        "authorizationUrl": "http://localhost:8080/api-docs",
+                        "authorizationUrl": "https://sokanred341-project-portfolio.onrender.com/auth/google",
                         "scopes": {
                             "profile": "Read access"
                         }
